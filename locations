@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warehousing & Fulfillment Locations | Southern California 3PL</title>
+    <meta name="description" content="Strategic 3PL warehouse locations in Santa Fe Springs and Commerce, California. Minutes from the Ports of LA and Long Beach.">
+    <style>
+        :root { --primary: #0f172a; --accent: #0284c7; --text: #334155; --light: #f8fafc; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.6; color: var(--text); margin: 0; padding: 0; }
+        nav { background: var(--primary); padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; }
+        nav a { color: white; text-decoration: none; font-weight: bold; margin-left: 1.5rem; }
+        .logo { color: white; font-size: 1.25rem; font-weight: 800; }
+        .page-header { background: var(--primary); color: white; padding: 4rem 2rem; text-align: center; }
+        .container { max-width: 1000px; margin: 4rem auto; padding: 0 2rem; }
+        .location-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2.5rem; margin-top: 3rem; }
+        .location-card { border: 1px solid #e2e8f0; border-radius: 8px; padding: 2rem; background: white; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); }
+        .location-card h3 { color: var(--accent); margin-top: 0; font-size: 1.5rem; border-bottom: 2px solid var(--light); padding-bottom: 0.5rem; }
+        .address { font-size: 1.1rem; font-weight: 500; color: var(--primary); margin: 1rem 0; }
+        .badge-list { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1rem; padding: 0; list-style: none; }
+        .badge { background: #e0f2fe; color: #0369a1; padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.85rem; font-weight: 600; }
+        .highlight-box { background: var(--light); padding: 2rem; border-radius: 8px; border-left: 4px solid var(--primary); margin-top: 4rem; }
+        footer { background: var(--primary); color: #94a3b8; text-align: center; padding: 2rem; margin-top: 5rem; font-size: 0.9rem; }
+    </style>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WarehouseOrDistributionCenter",
+      "name": "Southern California Retail Fulfillment Hubs",
+      "telephone": "+1-323-888-9001",
+      "location": [
+        {
+          "@type": "PostalAddress",
+          "streetAddress": "12801 Ann St",
+          "addressLocality": "Santa Fe Springs",
+          "addressRegion": "CA",
+          "postalCode": "90670",
+          "addressCountry": "US"
+        },
+        {
+          "@type": "PostalAddress",
+          "streetAddress": "5500 E. Slauson Ave",
+          "addressLocality": "Commerce",
+          "addressRegion": "CA",
+          "postalCode": "90040",
+          "addressCountry": "US"
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">3PL RETAIL FULFILLMENT</div>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="locations.html">Locations</a>
+            <a href="index.html#quote" style="background: var(--accent); color: white; padding: 0.4rem 1rem; text-decoration: none; border-radius: 4px; font-weight: bold;">Get Quote</a>
+        </div>
+    </nav>
+
+    <div class="page-header">
+        <h1>Strategic Southern California Warehouse Footprint</h1>
+        <p>Operating out of two premier logistics hubs in the Los Angeles basin for rapid port and retail distribution access.</p>
+    </div>
+
+    <div class="container">
+        <h2>Our Logistics Facilities</h2>
+        <p>Positioned perfectly inside the core Southern California industrial market, our dual-facility footprint allows apparel brands to drastically cut down on port drayage costs and outbound transit times.</p>
+        
+        <div class="location-grid">
+            <div class="location-card">
+                <h3>Santa Fe Springs Facility</h3>
+                <p class="address">
+                    12801 Ann St<br>
+                    Santa Fe Springs, CA 90670
+                </p>
+                <p><strong>Phone:</strong> (323) 888-9001</p>
+                <p>Our Santa Fe Springs location is custom-engineered for high-volume retail apparel receiving, cross-docking, and swift inventory deployment.</p>
+                <ul class="badge-list">
+                    <li class="badge">Apparel Receiving</li>
+                    <li class="badge">Cross-Docking</li>
+                    <li class="badge">B2B Distribution</li>
+                </ul>
+            </div>
+
+            <div class="location-card">
+                <h3>Commerce Facility</h3>
+                <p class="address">
+                    5500 E. Slauson Ave<br>
+                    Commerce, CA 90040
+                </p>
+                <p><strong>Phone:</strong> (323) 888-9001</p>
+                <p>Our Commerce facility serves as our primary hub for bulk logistics storage, retail compliance prep, and direct big-box carrier routing.</p>
+                <ul class="badge-list">
+                    <li class="badge">Bulk Storage</li>
+                    <li class="badge">Retail Compliance</li>
+                    <li class="badge">EDI Order Routing</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="highlight-box">
+            <h3>Why Our Southern California Location Matters</h3>
+            <p>Located minutes from major Los Angeles freight corridors, rail yards, and the nation's busiest ports (LA and Long Beach), our facilities keep your supply chain moving efficiently. We give your brand the geographical advantage needed to meet strict delivery windows for major retailers across the country.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 Southern California 3PL Provider. Partnered with <a href="https://hawkishllc.com" style="color: #cbd5e1;">Hawkish LLC</a>.</p>
+        <p>Main Office: (323) 888-9001 | Family-Owned Since 1999</p>
+    </footer>
+
+</body>
+</html>
