@@ -126,8 +126,8 @@
         .hwk-provider-card {
             width: 100%;
             max-width: 440px;
-            /* Fixed height locked to tallest step preventing layout jumps */
-            height: 680px;
+            /* Increased height to fit all fields and bottom CTA buttons */
+            height: 820px;
             margin: 0 auto;
             padding: 8px;
             box-sizing: border-box;
@@ -136,7 +136,7 @@
             box-shadow: 0 10px 25px rgba(0,0,0,0.3);
         }
 
-        /* Ensure dynamic iframe respects parent container bounds */
+        /* Ensure iframe fills container bounds */
         .hwk-provider-card iframe {
             width: 100% !important;
             min-width: 100% !important;
@@ -231,11 +231,11 @@
             nav a { margin: 0 0.75rem; }
             .retail-grid { gap: 1rem; font-size: 1.1rem; }
 
-            /* Mobile viewport expansion for stacked fields */
+            /* Mobile viewport adjustment */
             .hwk-provider-card {
                 max-width: 100%;
                 padding: 0;
-                height: 760px; /* Headroom for mobile step stacking */
+                height: 860px; /* Extra height for mobile stacked inputs */
             }
         }
     </style>
