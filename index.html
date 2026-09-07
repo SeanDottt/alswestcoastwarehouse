@@ -126,14 +126,15 @@
         .hwk-provider-card {
           width: 100%;
           max-width: 440px;
-          /* Increased from 820px to 870px to give the NEXT button room */
-          height: 870px;
+          /* Increased height to 980px to accommodate taller multi-field steps */
+          height: 980px;
           margin: 0 auto;
           padding: 16px 12px;
           background-color: #FFFFFF;
           border: 4px solid #1A202C;
           box-shadow: 8px 8px 0px #1A202C; /* Hard Brutalist Shadow */
           box-sizing: border-box;
+          overflow: hidden;
         }
 
         /* Ensure iframe fills container bounds cleanly */
@@ -234,7 +235,7 @@
             /* Mobile viewport adjustment */
             .hwk-provider-card {
               max-width: 100%;
-              height: 910px;
+              height: 1020px;
               padding: 12px 8px;
               border-width: 3px;
               box-shadow: 5px 5px 0px #1A202C;
