@@ -11,8 +11,9 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <title>Southern California Retail Apparel Fulfillment | ALS West Coast Logistics</title>
+    <title>Southern California Retail Apparel Fulfillment | Sample Warehouse</title>
     <meta name="description" content="Family-owned Southern California 3PL specializing in retail apparel fulfillment and big-box compliance for Walmart, Target, Costco, and Sam's Club since 1999.">
+    
     <style>
         :root { 
             --primary: #560b1c; 
@@ -29,6 +30,8 @@
             padding: 0; 
             background-color: #ffffff;
         }
+
+        /* Navigation */
         nav { 
             background: var(--primary); 
             padding: 1rem 2rem; 
@@ -64,43 +67,6 @@
             border-radius: 4px;
             padding: 2px;
         }
-        .hero { 
-            background: linear-gradient(rgba(30,27,27,0.85), rgba(86,11,28,0.45)), url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1200&q=80') center/cover; 
-            color: white; 
-            padding: 7rem 2rem; 
-            text-align: center; 
-        }
-        .hero h1 { 
-            font-size: 2.8rem; 
-            margin-bottom: 1.5rem; 
-            font-weight: 800;
-            max-width: 900px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        .hero p { 
-            font-size: 1.3rem; 
-            max-width: 800px; 
-            margin: 0 auto 2.5rem; 
-            color: #f3f4f6; 
-        }
-        .btn { 
-            background: var(--primary); 
-            color: white; 
-            padding: 0.85rem 1.75rem; 
-            text-decoration: none; 
-            border-radius: 4px; 
-            font-weight: bold; 
-            border: 1px solid rgba(255,255,255,0.2);
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-        }
-        .btn:hover {
-            background: #ffffff;
-            color: var(--primary);
-            border-color: #ffffff;
-            box-shadow: 0 4px 20px rgba(255,255,255,0.3);
-        }
         .nav-btn {
             background: transparent;
             border: 1px solid #ffffff;
@@ -111,8 +77,71 @@
             background: #ffffff;
             color: var(--primary) !important;
         }
+
+        /* Hero Split Layout (Cummins Logistics Style) */
+        .hero { 
+            background: linear-gradient(rgba(30,27,27,0.88), rgba(86,11,28,0.70)), url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1200&q=80') center/cover; 
+            color: white; 
+            padding: 4rem 2rem; 
+        }
+        .hero-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 440px;
+            gap: 3rem;
+            align-items: center;
+        }
+        .hero-text h1 { 
+            font-size: 2.8rem; 
+            margin-bottom: 1.2rem; 
+            font-weight: 800;
+            line-height: 1.2;
+        }
+        .hero-text p { 
+            font-size: 1.2rem; 
+            margin-bottom: 2rem; 
+            color: #f3f4f6; 
+        }
+        .hero-highlights {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 2rem 0;
+        }
+        .hero-highlights li {
+            font-size: 1.05rem;
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .hero-highlights li::before {
+            content: "✓";
+            color: #4ade80;
+            font-weight: bold;
+        }
+
+        /* HAWKISH QUOTE ENGINE EMBED CSS */
+        .hwk-provider-card {
+            width: 100%;
+            max-width: 440px;
+            min-height: 600px;
+            margin: 0 auto;
+            padding: 8px;
+            box-sizing: border-box;
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+        }
+        .hwk-provider-card iframe {
+            width: 100% !important;
+            min-width: 100% !important;
+            border: none !important;
+        }
+
+        /* Standard Containers & Grids */
         .container { 
-            max-width: 1000px; 
+            max-width: 1100px; 
             margin: 5rem auto; 
             padding: 0 2rem; 
             box-sizing: border-box;
@@ -162,17 +191,8 @@
             box-shadow: 0 2px 4px rgba(0,0,0,0.04);
             border: 1px solid #e5e7eb;
         }
-        .form-section { 
-            background: var(--light); 
-            padding: 4rem 2rem; 
-            border-radius: 12px; 
-            margin-top: 5rem; 
-            border: 1px solid #e8e5e5; 
-            box-shadow: 0 4px 12px rgba(0,0,0,0.02);
-        }
-        .form-section h2 {
-            color: var(--primary);
-        }
+
+        /* Footer */
         footer { 
             background: var(--dark); 
             color: #a3a3a3; 
@@ -186,12 +206,31 @@
             text-decoration: none;
         }
 
+        /* Responsive Breakpoints */
+        @media (max-width: 992px) {
+            .hero-container {
+                grid-template-columns: 1fr;
+            }
+            .hero-text {
+                text-align: center;
+            }
+            .hero-highlights li {
+                justify-content: center;
+            }
+        }
+
         @media (max-width: 768px) {
             .hero h1 { font-size: 2rem; }
             .hero p { font-size: 1.1rem; }
             nav { flex-direction: column; gap: 1rem; text-align: center; padding: 1.5rem; }
             nav a { margin: 0 0.75rem; }
             .retail-grid { gap: 1rem; font-size: 1.1rem; }
+
+            .hwk-provider-card {
+                max-width: 100%;
+                padding: 0;
+                min-height: 760px;
+            }
         }
     </style>
     
@@ -199,7 +238,7 @@
     {
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
-      "name": "ALS West Coast Logistics",
+      "name": "Sample Warehouse",
       "description": "3rd Party Warehouse specializing in Retail Apparel Fulfillment based in Southern California. Family Owned since 1999.",
       "telephone": "+1-323-888-9001",
       "areaServed": "United States",
@@ -211,8 +250,8 @@
 
     <nav>
         <div class="nav-logo-block">
-            <img src="Gemini_Generated_Image_rnq47rrnq47rrnq4.png" class="nav-logo-thumb" alt="ALS Crest">
-            <span>ALS WEST COAST LOGISTICS</span>
+            <img src="Gemini_Generated_Image_rnq47rrnq47rrnq4.png" class="nav-logo-thumb" alt="Sample Warehouse Crest">
+            <span>SAMPLE WAREHOUSE</span>
         </div>
         <div>
             <a href="index.html">Home</a>
@@ -221,15 +260,29 @@
         </div>
     </nav>
 
+    <!-- Cummins Logistics Style Hero Section with Embed Sidebar Side-by-Side -->
     <div class="hero">
-        <h1>Premium Southern California Retail Apparel Fulfillment</h1>
-        <p>Trusted family-owned specialized warehousing and 3PL distribution since 1999. Flawless routing and strict retail compliance for the nation's largest brands.</p>
-        <a href="#quote" class="btn">Request a Fulfillment Quote</a>
+        <div class="hero-container">
+            <div class="hero-text">
+                <h1>Premium Southern California Retail Apparel Fulfillment</h1>
+                <p>Trusted family-owned specialized warehousing and 3PL distribution since 1999. Flawless routing and strict retail compliance for the nation's largest brands.</p>
+                <ul class="hero-highlights">
+                    <li>Strict Retail Routing Guide Compliance</li>
+                    <li>Port Proximity: LA & Long Beach Drayage</li>
+                    <li>Flexible Month-to-Month Storage Options</li>
+                </ul>
+            </div>
+
+            <!-- HAWKISH QUOTE ENGINE EMBED -->
+            <div class="hwk-provider-card" id="quote">
+                <script type="text/javascript" src="https://form.jotform.com/jsform/262494764771167"></script>
+            </div>
+        </div>
     </div>
 
     <div class="container">
         <h2 style="color: var(--primary); font-size: 2rem; font-weight: 800;">A Legacy of Retail Logistics Excellence</h2>
-        <p style="font-size: 1.1rem; color: #4b5563;">Since 1999, our family-owned and operated 3rd-party warehouse infrastructure has served as the operational backbone for apparel brands looking to scale. Based entirely in the premier logistics hub of Southern California, we specialize deeply in the strict nuances of <strong>retail apparel fulfillment</strong>. We preserve garment quality, handle specialized ticketing, and manage the fast-moving routing demands of major national retail chains.</p>
+        <p style="font-size: 1.1rem; color: #4b5563;">Since 1999, our family-owned and operated 3rd-party warehouse infrastructure has served as the operational backbone for apparel brands looking to scale. Based entirely in the premier logistics hub of Southern California, <strong>Sample Warehouse</strong> specializes deeply in the strict nuances of <strong>retail apparel fulfillment</strong>. We preserve garment quality, handle specialized ticketing, and manage the fast-moving routing demands of major national retail chains.</p>
 
         <div class="grid">
             <div class="card">
@@ -258,15 +311,8 @@
         </div>
     </div>
 
-    <div class="container form-section" id="quote">
-        <h2 style="text-align: center; margin-top: 0; font-weight: 800; font-size: 1.8rem;">Streamline Your SoCal Retail Fulfillment</h2>
-        <p style="text-align: center; margin-bottom: 2rem; color: #4b5563;">Fill out the secure distribution parameter profile below to connect with our onboarding team.</p>
-        
-        <script type="text/javascript" src="https://form.jotform.com/jsform/261445350008146"></script>
-    </div>
-
     <footer>
-        <p>© 2026 ALS West Coast Logistics. All Rights Reserved.</p>
+        <p>© 2026 Sample Warehouse. All Rights Reserved.</p>
         <p style="font-size: 0.85rem; margin-bottom: 1.5rem; color: #a3a3a3;">Powered by <a href="https://www.hawkishllc.com" target="_blank" style="color: #ffffff; font-weight: bold; text-decoration: underline;">Hawkish</a></p>
         <p>Main Office: <a href="tel:3238889001" style="color: #ffffff; font-weight: bold; text-decoration: none;">(323) 888-9001</a> | Specialized Retail Distribution Since 1999</p>
     </footer>
