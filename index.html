@@ -124,23 +124,24 @@
         /* HAWKISH QUOTE ENGINE EMBED CSS */
         /* Responsive hero right-column & sidebar container */
         .hwk-provider-card {
-          width: 100%;
-          max-width: 440px;
-          /* Set to match the tallest form step (e.g., Step 1 with stacked cards) */
-          min-height: 680px; 
-          margin: 0 auto;
-          padding: 8px;
-          box-sizing: border-box;
-          background: #ffffff;
-          border-radius: 8px;
-          box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+            width: 100%;
+            max-width: 440px;
+            /* Fixed height locked to tallest step preventing layout jumps */
+            height: 680px;
+            margin: 0 auto;
+            padding: 8px;
+            box-sizing: border-box;
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
         }
 
-        /* Ensure dynamic JS iframe respects parent container bounds */
+        /* Ensure dynamic iframe respects parent container bounds */
         .hwk-provider-card iframe {
-          width: 100% !important;
-          min-width: 100% !important;
-          border: none !important;
+            width: 100% !important;
+            min-width: 100% !important;
+            height: 100% !important;
+            border: none !important;
         }
 
         /* Standard Containers & Grids */
@@ -230,11 +231,11 @@
             nav a { margin: 0 0.75rem; }
             .retail-grid { gap: 1rem; font-size: 1.1rem; }
 
-            /* Mobile viewport expansion for stacked CTAs */
+            /* Mobile viewport expansion for stacked fields */
             .hwk-provider-card {
-              max-width: 100%;
-              padding: 0;
-              min-height: 780px; /* Taller headroom on mobile devices */
+                max-width: 100%;
+                padding: 0;
+                height: 760px; /* Headroom for mobile step stacking */
             }
         }
     </style>
@@ -280,7 +281,15 @@
 
             <!-- HAWKISH QUOTE ENGINE - PROVIDER HERO & SIDEBAR CARD EMBED -->
             <div class="hwk-provider-card" id="quote">
-              <script type="text/javascript" src="https://form.jotform.com/jsform/262236580117151"></script>
+              <iframe
+                id="JotFormIFrame-262494764771167"
+                title="Hawkish Quote Engine"
+                src="https://form.jotform.com/262494764771167?nojump"
+                allowtransparency="true"
+                frameborder="0"
+                scrolling="no"
+                style="width: 100%; min-width: 100%; height: 100%; border: none;"
+              ></iframe>
             </div>
         </div>
     </div>
