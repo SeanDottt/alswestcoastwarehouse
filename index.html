@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Google Analytics Integration -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-1SYJXQBKTS"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -122,27 +123,24 @@
         }
 
         /* HAWKISH QUOTE ENGINE EMBED CSS */
-        /* Responsive hero right-column & sidebar container with Brutalist Border */
         .hwk-provider-card {
-          width: 100%;
-          max-width: 440px;
-          /* Increased height to 980px to accommodate taller multi-field steps */
-          height: 980px;
-          margin: 0 auto;
-          padding: 16px 12px;
-          background-color: #FFFFFF;
-          border: 4px solid #1A202C;
-          box-shadow: 8px 8px 0px #1A202C; /* Hard Brutalist Shadow */
-          box-sizing: border-box;
-          overflow: hidden;
+            width: 100%;
+            max-width: 440px;
+            height: 980px;
+            margin: 0 auto;
+            padding: 16px 12px;
+            background-color: #FFFFFF;
+            border: 4px solid #1A202C;
+            box-shadow: 8px 8px 0px #1A202C; /* Hard Brutalist Shadow */
+            box-sizing: border-box;
+            overflow: hidden;
         }
 
-        /* Ensure iframe fills container bounds cleanly */
         .hwk-provider-card iframe {
-          width: 100% !important;
-          min-width: 100% !important;
-          height: 100% !important;
-          border: none !important;
+            width: 100% !important;
+            min-width: 100% !important;
+            height: 100% !important;
+            border: none !important;
         }
 
         /* Standard Containers & Grids */
@@ -232,13 +230,12 @@
             nav a { margin: 0 0.75rem; }
             .retail-grid { gap: 1rem; font-size: 1.1rem; }
 
-            /* Mobile viewport adjustment */
             .hwk-provider-card {
-              max-width: 100%;
-              height: 1020px;
-              padding: 12px 8px;
-              border-width: 3px;
-              box-shadow: 5px 5px 0px #1A202C;
+                max-width: 100%;
+                height: 1020px;
+                padding: 12px 8px;
+                border-width: 3px;
+                box-shadow: 5px 5px 0px #1A202C;
             }
         }
     </style>
@@ -282,17 +279,19 @@
                 </ul>
             </div>
 
-            <!-- HAWKISH QUOTE ENGINE - PROVIDER HERO & SIDEBAR CARD EMBED -->
+            <!-- HAWKISH QUOTE ENGINE EMBED CONTAINER -->
             <div class="hwk-provider-card" id="quote">
               <iframe
                 id="JotFormIFrame-262497228954168"
                 title="Hawkish Quote Engine"
-                src="https://form.jotform.com/2262497228954168?nojump"
+                src="https://form.jotform.com/262497228954168?nojump"
                 allowtransparency="true"
                 frameborder="0"
                 scrolling="no"
                 style="width: 100%; min-width: 100%; height: 100%; border: none;"
               ></iframe>
+              <script src="https://cdn.jotfor.ms/s/umd/latest/for-form-embed-handler.js"></script>
+              <script>window.jotformEmbedHandler("iframe[id='JotFormIFrame-262497228954168']", "https://form.jotform.com/")</script>
             </div>
         </div>
     </div>
