@@ -1,315 +1,438 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1SYJXQBKTS"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-1SYJXQBKTS');
-    </script>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <title>Warehousing & Fulfillment Locations | ALS West Coast Logistics</title>
-    <meta name="description" content="Strategic 3PL warehouse locations in Santa Fe Springs and Commerce, California. Minutes from the Ports of LA and Long Beach.">
-    <style>
-        :root { 
-            --primary: #560b1c; 
-            --dark: #1e1b1b;
-            --accent: #8b1e32; 
-            --text: #3d3435; 
-            --light: #faf8f8; 
-        }
-        body { 
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
-            line-height: 1.6; 
-            color: var(--text); 
-            margin: 0; 
-            padding: 0; 
-            background-color: #ffffff;
-        }
-        nav { 
-            background: var(--primary); 
-            padding: 1rem 2rem; 
-            display: flex; 
-            justify-content: space-between; 
-            align-items: center; 
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        nav a { 
-            color: white; 
-            text-decoration: none; 
-            font-weight: bold; 
-            margin-left: 1.5rem;
-            font-size: 0.95rem;
-            transition: opacity 0.2s ease;
-        }
-        nav a:hover {
-            opacity: 0.8;
-        }
-        .nav-logo-block {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            color: white; 
-            font-size: 1.15rem; 
-            font-weight: 800; 
-            letter-spacing: 1px;
-        }
-        .nav-logo-thumb {
-            height: 32px;
-            width: auto;
-            background: #ffffff;
-            border-radius: 4px;
-            padding: 2px;
-        }
-        .page-header { 
-            background: linear-gradient(rgba(30,27,27,0.85), rgba(86,11,28,0.45)), url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1200&q=80') center/cover; 
-            color: white; 
-            padding: 5rem 2rem; 
-            text-align: center; 
-        }
-        .page-header h1 {
-            font-size: 2.6rem;
-            font-weight: 800;
-            margin: 0 0 1rem 0;
-        }
-        .page-header p {
-            font-size: 1.2rem;
-            color: #f3f4f6;
-            margin: 0 auto;
-            max-width: 800px;
-        }
-        .nav-btn {
-            background: transparent;
-            border: 1px solid #ffffff;
-            padding: 0.45rem 1.2rem !important;
-            border-radius: 4px;
-        }
-        .nav-btn:hover {
-            background: #ffffff;
-            color: var(--primary) !important;
-        }
-        .container { 
-            max-width: 1000px; 
-            margin: 4rem auto; 
-            padding: 0 2rem; 
-            box-sizing: border-box;
-        }
-        .container h2 {
-            color: var(--primary);
-            font-size: 2rem;
-            font-weight: 800;
-        }
-        .location-grid { 
-            display: grid; 
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
-            gap: 2.5rem; 
-            margin-top: 3rem; 
-        }
-        .location-card { 
-            border: 1px solid #e8e5e5; 
-            border-radius: 8px; 
-            padding: 2.5rem 2rem; 
-            background: var(--light); 
-            box-shadow: 0 4px 6px rgba(0,0,0,0.02); 
-            display: flex;
-            flex-direction: column;
-        }
-        .location-card h3 { 
-            color: var(--primary); 
-            margin-top: 0; 
-            font-size: 1.5rem; 
-            border-bottom: 2px solid #e8e5e5; 
-            padding-bottom: 0.5rem; 
-            font-weight: 800;
-        }
-        .address { 
-            font-size: 1.1rem; 
-            font-weight: 600; 
-            color: var(--dark); 
-            margin: 1rem 0; 
-        }
-        .badge-list { 
-            display: flex; 
-            flex-wrap: wrap; 
-            gap: 0.5rem; 
-            margin: 1.5rem 0 2rem 0; 
-            padding: 0; 
-            list-style: none; 
-        }
-        .badge { 
-            background: #fff0f1; 
-            color: var(--primary); 
-            padding: 0.3rem 0.85rem; 
-            border-radius: 20px; 
-            font-size: 0.85rem; 
-            font-weight: 700; 
-            border: 1px solid rgba(86,11,28,0.1);
-        }
-        .map-btn {
-            display: inline-block;
-            background: var(--primary);
-            color: white;
-            text-decoration: none;
-            padding: 0.65rem 1.2rem;
-            border-radius: 4px;
-            font-weight: bold;
-            font-size: 0.9rem;
-            text-align: center;
-            margin-top: auto;
-            transition: background 0.2s ease;
-            width: fit-content;
-        }
-        .map-btn:hover {
-            background: var(--accent);
-        }
-        .highlight-box { 
-            background: var(--light); 
-            padding: 2.5rem; 
-            border-radius: 8px; 
-            border-left: 4px solid var(--primary); 
-            margin-top: 5rem; 
-            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
-            border-top: 1px solid #e8e5e5;
-            border-right: 1px solid #e8e5e5;
-            border-bottom: 1px solid #e8e5e5;
-        }
-        .highlight-box h3 {
-            color: var(--primary);
-            margin-top: 0;
-            font-size: 1.4rem;
-            font-weight: 800;
-        }
-        footer { 
-            background: var(--dark); 
-            color: #a3a3a3; 
-            text-align: center; 
-            padding: 3rem 2rem; 
-            margin-top: 6rem; 
-            font-size: 0.95rem; 
-            border-top: 3px solid var(--primary);
-        }
-        footer a {
-            text-decoration: none;
-        }
-
-        @media (max-width: 768px) {
-            .page-header h1 { font-size: 1.8rem; }
-            .page-header p { font-size: 1rem; }
-            nav { flex-direction: column; gap: 1rem; text-align: center; padding: 1.5rem; }
-            nav a { margin: 0 0.75rem; }
-            .location-grid { grid-template-columns: 1fr; }
-            .map-btn { width: 100%; box-sizing: border-box; }
-        }
-    </style>
-    
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WarehouseOrDistributionCenter",
-      "name": "ALS West Coast Logistics - Fulfillment Hubs",
-      "telephone": "+1-323-888-9001",
-      "location": [
-        {
-          "@type": "PostalAddress",
-          "streetAddress": "12801 Ann St",
-          "addressLocality": "Santa Fe Springs",
-          "addressRegion": "CA",
-          "postalCode": "90670",
-          "addressCountry": "US"
-        },
-        {
-          "@type": "PostalAddress",
-          "streetAddress": "5500 E. Slauson Ave",
-          "addressLocality": "Commerce",
-          "addressRegion": "CA",
-          "postalCode": "90040",
-          "addressCountry": "US"
-        }
-      ]
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hawkish Logistics Network Matcher</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     }
-    </script>
+
+    body {
+      background-color: #f4f7f6;
+      margin: 0;
+      padding: 40px 20px;
+      color: #2c3e50;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+      overflow: hidden;
+    }
+
+    .header {
+      padding: 24px 32px;
+      border-bottom: 1px solid #eef2f5;
+      background: #fafbfc;
+    }
+
+    .header h1 {
+      margin: 0 0 8px 0;
+      font-size: 24px;
+      color: #1a252f;
+    }
+
+    .header p {
+      margin: 0;
+      color: #64748b;
+      font-size: 14px;
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: 1fr 420px;
+      min-height: 520px;
+    }
+
+    /* Left Panel: Map Display */
+    .map-panel {
+      padding: 32px;
+      background: #ffffff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border-right: 1px solid #eef2f5;
+      position: relative;
+    }
+
+    .map-svg {
+      width: 100%;
+      max-width: 580px;
+      height: auto;
+      transition: all 0.4s ease;
+    }
+
+    .map-legend {
+      margin-top: 20px;
+      display: flex;
+      gap: 16px;
+      font-size: 12px;
+      color: #64748b;
+    }
+
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .legend-color {
+      width: 12px;
+      height: 12px;
+      border-radius: 3px;
+    }
+
+    /* Right Panel: Controls & Options */
+    .control-panel {
+      padding: 32px;
+      background: #fafbfc;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Tabs */
+    .tabs {
+      display: flex;
+      background: #e2e8f0;
+      padding: 4px;
+      border-radius: 8px;
+      gap: 4px;
+      margin-bottom: 24px;
+    }
+
+    .tab-btn {
+      flex: 1;
+      border: none;
+      background: transparent;
+      padding: 10px 8px;
+      font-size: 13px;
+      font-weight: 600;
+      color: #475569;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      text-align: center;
+    }
+
+    .tab-btn.active {
+      background: #ffffff;
+      color: #0f172a;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+
+    /* Form Fields */
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 13px;
+      font-weight: 600;
+      color: #334155;
+      margin-bottom: 8px;
+    }
+
+    select, input[type="text"] {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #cbd5e1;
+      border-radius: 8px;
+      font-size: 14px;
+      background-color: #ffffff;
+      color: #1e293b;
+      outline: none;
+      transition: border-color 0.2s ease;
+    }
+
+    select:focus, input[type="text"]:focus {
+      border-color: #2563eb;
+    }
+
+    /* Dynamic Details Box */
+    .details-box {
+      background: #f1f5f9;
+      border-radius: 8px;
+      padding: 16px;
+      margin-top: 12px;
+      font-size: 13px;
+      color: #334155;
+      border-left: 4px solid #2563eb;
+    }
+
+    .details-box h4 {
+      margin: 0 0 6px 0;
+      font-size: 14px;
+      color: #0f172a;
+    }
+
+    .cta-btn {
+      margin-top: auto;
+      width: 100%;
+      padding: 14px;
+      background: #2563eb;
+      color: #ffffff;
+      border: none;
+      border-radius: 8px;
+      font-size: 15px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s ease;
+    }
+
+    .cta-btn:hover {
+      background: #1d4ed8;
+    }
+
+    @media (max-width: 900px) {
+      .layout {
+        grid-template-columns: 1fr;
+      }
+      .map-panel {
+        border-right: none;
+        border-bottom: 1px solid #eef2f5;
+      }
+    }
+  </style>
 </head>
 <body>
 
-    <nav>
-        <div class="nav-logo-block">
-            <img src="Gemini_Generated_Image_rnq47rrnq47rrnq4.png" class="nav-logo-thumb" alt="ALS Crest">
-            <span>ALS WEST COAST LOGISTICS</span>
-        </div>
-        <div>
-            <a href="index.html">Home</a>
-            <a href="locations.html">Locations</a>
-            <a href="index.html#quote" class="nav-btn">Get Quote</a>
-        </div>
-    </nav>
+<div class="container">
+  <div class="header">
+    <h1>Define Your Logistics Footprint</h1>
+    <p>Step 1 of 4: Select your geographic coverage strategy to view available hubs and operational capabilities.</p>
+  </div>
 
-    <div class="page-header">
-        <h1>Strategic Southern California Warehouse Footprint</h1>
-        <p>Operating out of two premier logistics hubs in the Los Angeles basin for rapid port and retail distribution access.</p>
+  <div class="layout">
+    
+    <!-- LEFT PANEL: MAP MOCKUP -->
+    <div class="map-panel">
+      <svg class="map-svg" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+        <!-- Base Map Outline (Simplified US Representation) -->
+        <g id="map-regions" stroke="#ffffff" stroke-width="2" fill="#cbd5e1">
+          <!-- West / PNW -->
+          <path id="region-west" d="M 50 80 L 220 60 L 200 280 L 120 320 L 50 220 Z" />
+          <!-- Central / Midwest / Gulf -->
+          <path id="region-central" d="M 220 60 L 520 80 L 480 360 L 320 420 L 200 280 Z" />
+          <!-- East / Southeast -->
+          <path id="region-east" d="M 520 80 L 730 110 L 680 340 L 580 430 L 480 360 Z" />
+        </g>
+
+        <!-- Dynamic Overlay / Heatmaps (Toggled via JS) -->
+        <g id="map-overlays">
+          <!-- National Network Nodes -->
+          <g id="overlay-national" style="display: none;">
+            <circle cx="120" cy="240" r="45" fill="#2563eb" opacity="0.3"/>
+            <circle cx="120" cy="240" r="8" fill="#2563eb"/>
+            <circle cx="380" cy="180" r="45" fill="#2563eb" opacity="0.3"/>
+            <circle cx="380" cy="180" r="8" fill="#2563eb"/>
+            <circle cx="620" cy="180" r="45" fill="#2563eb" opacity="0.3"/>
+            <circle cx="620" cy="180" r="8" fill="#2563eb"/>
+          </g>
+
+          <!-- Metro Pin Points -->
+          <g id="overlay-metro" style="display: none;">
+            <g id="pin-la" class="metro-pin"><circle cx="90" cy="260" r="10" fill="#ef4444"/><text x="90" y="285" font-size="12" font-weight="bold" text-anchor="middle" fill="#0f172a">LA / Long Beach</text></g>
+            <g id="pin-ny" class="metro-pin"><circle cx="660" cy="150" r="10" fill="#ef4444"/><text x="660" y="140" font-size="12" font-weight="bold" text-anchor="middle" fill="#0f172a">NY / NJ Metro</text></g>
+            <g id="pin-savannah" class="metro-pin"><circle cx="610" cy="330" r="10" fill="#ef4444"/><text x="610" y="355" font-size="12" font-weight="bold" text-anchor="middle" fill="#0f172a">Savannah</text></g>
+            <g id="pin-chi" class="metro-pin"><circle cx="430" cy="170" r="10" fill="#ef4444"/><text x="430" y="160" font-size="12" font-weight="bold" text-anchor="middle" fill="#0f172a">Chicago</text></g>
+          </g>
+        </g>
+      </svg>
+
+      <div class="map-legend" id="map-legend">
+        <div class="legend-item"><div class="legend-color" style="background: #2563eb;"></div> <span id="legend-text-1">Active Network Hubs</span></div>
+        <div class="legend-item"><div class="legend-color" style="background: #93c5fd;"></div> <span id="legend-text-2">1-2 Day Delivery Radius</span></div>
+      </div>
     </div>
 
-    <div class="container">
-        <h2>Our Logistics Facilities</h2>
-        <p style="font-size: 1.1rem; color: #4b5563;">Positioned perfectly inside the core Southern California industrial market, our dual-facility footprint allows apparel brands to drastically cut down on port drayage costs and outbound transit times.</p>
-        
-        <div class="location-grid">
-            <div class="location-card">
-                <h3>Santa Fe Springs Facility</h3>
-                <p class="address">
-                    12801 Ann St<br>
-                    Santa Fe Springs, CA 90670
-                </p>
-                <p><strong>Phone:</strong> <a href="tel:3238889001" style="color: var(--primary); text-decoration: none; font-weight: bold;">(323) 888-9001</a></p>
-                <p style="color: #4b5563;">Our Santa Fe Springs location is custom-engineered for high-volume retail apparel receiving, flat-pack processing, and swift inventory deployment.</p>
-                <ul class="badge-list">
-                    <li class="badge">Apparel Receiving</li>
-                    <li class="badge">Cross-Docking</li>
-                    <li class="badge">B2B Distribution</li>
-                </ul>
-                <a href="https://www.google.com/maps/search/?api=1&query=ALS+West+Coast+Logistics+12801+Ann+St+Santa+Fe+Springs+CA+90670" target="_blank" class="map-btn">Get Directions ↗</a>
-            </div>
+    <!-- RIGHT PANEL: CONTROLS & SELECTION -->
+    <div class="control-panel">
+      
+      <!-- 3 TABS -->
+      <div class="tabs">
+        <button class="tab-btn active" onclick="switchTab('national')">National</button>
+        <button class="tab-btn" onclick="switchTab('regional')">Regional</button>
+        <button class="tab-btn" onclick="switchTab('metro')">Metro / Port</button>
+      </div>
 
-            <div class="location-card">
-                <h3>Commerce Facility</h3>
-                <p class="address">
-                    5500 E. Slauson Ave<br>
-                    Commerce, CA 90040
-                </p>
-                <p><strong>Phone:</strong> <a href="tel:3238889001" style="color: var(--primary); text-decoration: none; font-weight: bold;">(323) 888-9001</a></p>
-                <p style="color: #4b5563;">Our Commerce facility serves as our primary hub for bulk logistics storage, retail compliance prep, and direct big-box carrier routing.</p>
-                <ul class="badge-list">
-                    <li class="badge">Bulk Storage</li>
-                    <li class="badge">Retail Compliance</li>
-                    <li class="badge">EDI Order Routing</li>
-                </ul>
-                <a href="https://www.google.com/maps/search/?api=1&query=ALS+West+Coast+Logistics+5500+E+Slauson+Ave+Commerce+CA+90040" target="_blank" class="map-btn">Get Directions ↗</a>
-            </div>
-        </div>
+      <!-- FORM OPTIONS (Column A Options Dynamically Inserted Here) -->
+      <div class="form-group">
+        <label id="option-label" for="column-a-select">Coverage Tier / Node Structure</label>
+        <select id="column-a-select" onchange="handleOptionChange()">
+          <!-- Options populated via JavaScript -->
+        </select>
+      </div>
 
-        <div class="highlight-box">
-            <h3>Why Our Southern California Location Matters</h3>
-            <p style="color: #4b5563; margin: 0; font-size: 1.05rem;">Located minutes from major Los Angeles freight corridors, rail yards, and the nation's busiest ports (LA and Long Beach), our facilities keep your supply chain moving efficiently. We give your brand the geographical advantage needed to meet strict delivery windows for major retailers across the country.</p>
-        </div>
+      <!-- DYNAMIC DETAILS DISPLAY -->
+      <div class="details-box" id="details-display">
+        <!-- Text populated via JavaScript -->
+      </div>
 
-        <div class="highlight-box" style="margin-top: 3rem;">
-            <h3>Southern California Retail Logistics FAQ</h3>
-            
-            <p><strong>Q: Why is a Commerce and Santa Fe Springs footprint ideal for retail apparel compliance?</strong><br>
-            <span style="color: #4b5563;">A: Operating out of Commerce (90040) and Santa Fe Springs (90670) places inventory directly adjacent to the major Los Angeles rail yards and routing corridors. This minimizes drayage transit from the Ports of LA and Long Beach, allowing apparel brands to meet strict compliance windows for cross-docking and big-box distribution.</span></p>
+      <button class="cta-btn">Continue to Operational Needs &rarr;</button>
 
-            <p style="margin-top: 1.5rem;"><strong>Q: Can you handle EDI routing and strict compliance guides for Target and Walmart?</strong><br>
-            <span style="color: #4b5563;">A: Yes. Our specialized retail apparel infrastructure handles full Electronic Data Interchange (EDI) order processing, specialized retail ticketing, and precise flat-pack sorting to ensure zero chargebacks from major retailers like Walmart, Target, Costco, and Sam's Club.</span></p>
-        </div>
     </div>
 
-    <footer>
-        <p>© 2026 ALS West Coast Logistics. All Rights Reserved.</p>
-        <p style="font-size: 0.85rem; margin-bottom: 1.5rem; color: #a3a3a3;">Powered by <a href="https://www.hawkishllc.com" target="_blank" style="color: #ffffff; font-weight: bold; text-decoration: underline;">Hawkish</a></p>
-        <p>Main Office: (323) 888-9001 | Family-Owned Since 1999</p>
-    </footer>
+  </div>
+</div>
+
+<script>
+  // SPREADSHEET DATA STRUCTURE
+  const mapData = {
+    national: {
+      label: "Select National Network Structure",
+      legend1: "Primary Warehouse Nodes",
+      legend2: "1-2 Day Ground Coverage Zone",
+      options: [
+        { 
+          value: "2-node", 
+          text: "2-Node Network (West + Midwest/East)", 
+          details: "Guarantees 90%+ 2-Day ground shipping nationwide. Typical placement: Inland Empire, CA + Columbus, OH." 
+        },
+        { 
+          value: "3-node", 
+          text: "3-Node Network (West + South Central + East)", 
+          details: "Guarantees 98%+ 2-Day ground shipping nationwide. Typical placement: LA Basin, CA + Dallas, TX + Eastern PA." 
+        },
+        { 
+          value: "4-node", 
+          text: "4-Node Express Network (PNW + SoCal + SE + NE)", 
+          details: "Optimized for 1-Day Regional ground shipping in major metros. Typical placement: Seattle, SoCal, Atlanta, NJ Metro." 
+        }
+      ]
+    },
+    regional: {
+      label: "Select Regional Corridor",
+      legend1: "Selected Regional Corridor",
+      legend2: "Adjacent Interstate Freight Lanes",
+      options: [
+        { value: "west-sw", text: "West / Southwest Corridor (CA, NV, AZ, UT)", details: "Covers the West Coast consumer base and border trade corridor. Central hubs: Las Vegas, NV / Reno, NV." },
+        { value: "midwest", text: "Midwest Hub (IL, IN, OH, WI, MI)", details: "Heartland distribution serving major population centers and rail hubs. Central hubs: Chicago, IL / Indianapolis, IN." },
+        { value: "southeast", text: "Southeast Corridor (GA, FL, NC, SC, TN)", details: "High-growth consumer distribution and port access. Central hubs: Atlanta, GA / Charlotte, NC." },
+        { value: "northeast", text: "Northeast Corridor (NY, NJ, PA, MA, MD)", details: "High-density consumer access with fast parcel delivery. Central hubs: Central NJ / Eastern PA." },
+        { value: "pnw", text: "Pacific Northwest (WA, OR, ID)", details: "Serves the Northwest regional market and Asia import trade. Central hubs: Seattle, WA / Portland, OR." },
+        { value: "south-central", text: "South Central / Gulf (TX, OK, LA, AR)", details: "Central gateway for Gulf access and cross-border trade. Central hubs: Dallas-Fort Worth, TX / Houston, TX." }
+      ]
+    },
+    metro: {
+      label: "Select Specific Gateway or Port Hub",
+      legend1: "Port / Gateway Terminal",
+      legend2: "Local Drayage & Metro Delivery Zone",
+      options: [
+        { value: "la-lb", text: "Los Angeles / Long Beach, CA", details: "Top US ocean container gateway & SoCal consumer metro. Ideal for port drayage and transloading." },
+        { value: "oak-sf", text: "Oakland / SF Bay Area, CA", details: "Northern California port gateway and high-density technology/consumer market." },
+        { value: "sea-tac", text: "Seattle / Tacoma, WA", details: "Pacific Northwest container gateway serving import routes and regional distribution." },
+        { value: "ny-nj", text: "NY / NJ Metro", details: "Largest East Coast ocean port and highest-density metro consumer market in the US." },
+        { value: "savannah", text: "Savannah, GA", details: "Fast-growing Southeast container ocean gateway with direct highway access to Atlanta." },
+        { value: "charleston", text: "Charleston, SC", details: "Deepwater Southeast ocean terminal specialized in bulk import staging and transload." },
+        { value: "norfolk", text: "Norfolk / Hampton Roads, VA", details: "Mid-Atlantic port gateway with direct rail links to Midwest manufacturing hubs." },
+        { value: "miami", text: "Miami / South Florida", details: "Latin America export/import gateway and high-density South Florida metro." },
+        { value: "houston", text: "Houston, TX", details: "Primary Gulf Coast ocean gateway for energy, industrial, and containerized goods." },
+        { value: "chicago", text: "Chicago Metro, IL", details: "The primary US inland rail port and midwest cross-docking capital." },
+        { value: "dfw", text: "Dallas / Fort Worth, TX", details: "South Central inland rail hub and mega-distribution market." },
+        { value: "atlanta", text: "Atlanta Hub, GA", details: "The primary logistics roundabout for Southeast regional freight and rail intermodal." }
+      ]
+    }
+  };
+
+  let currentTab = 'national';
+
+  // INITIALIZE INTERFACE
+  function init() {
+    switchTab('national');
+  }
+
+  // TAB SWITCHING LOGIC
+  function switchTab(tabKey) {
+    currentTab = tabKey;
+    
+    // Update active tab UI
+    document.querySelectorAll('.tab-btn').forEach((btn, index) => {
+      btn.classList.toggle('active', ['national', 'regional', 'metro'][index] === tabKey);
+    });
+
+    // Load Column A Options
+    const data = mapData[tabKey];
+    document.getElementById('option-label').innerText = data.label;
+    
+    const selectEl = document.getElementById('column-a-select');
+    selectEl.innerHTML = '';
+    
+    data.options.forEach(opt => {
+      const optionEl = document.createElement('option');
+      optionEl.value = opt.value;
+      optionEl.innerText = opt.text;
+      selectEl.appendChild(optionEl);
+    });
+
+    // Update Map Legends
+    document.getElementById('legend-text-1').innerText = data.legend1;
+    document.getElementById('legend-text-2').innerText = data.legend2;
+
+    // Render Map Overlays & Details
+    updateMapVisuals();
+    handleOptionChange();
+  }
+
+  // OPTION SELECTION CHANGE LOGIC
+  function handleOptionChange() {
+    const selectEl = document.getElementById('column-a-select');
+    const selectedValue = selectEl.value;
+    const selectedOption = mapData[currentTab].options.find(o => o.value === selectedValue);
+
+    // Update Details Box
+    const detailsBox = document.getElementById('details-display');
+    if (selectedOption) {
+      detailsBox.innerHTML = `<h4>${selectedOption.text}</h4><p style="margin:0">${selectedOption.details}</p>`;
+    }
+
+    updateMapVisuals();
+  }
+
+  // MAP SVG UPDATE LOGIC
+  function updateMapVisuals() {
+    const nationalOverlay = document.getElementById('overlay-national');
+    const metroOverlay = document.getElementById('overlay-metro');
+    const regionWest = document.getElementById('region-west');
+    const regionCentral = document.getElementById('region-central');
+    const regionEast = document.getElementById('region-east');
+
+    // Reset base regions
+    regionWest.setAttribute('fill', '#cbd5e1');
+    regionCentral.setAttribute('fill', '#cbd5e1');
+    regionEast.setAttribute('fill', '#cbd5e1');
+    nationalOverlay.style.display = 'none';
+    metroOverlay.style.display = 'none';
+
+    if (currentTab === 'national') {
+      nationalOverlay.style.display = 'block';
+      regionWest.setAttribute('fill', '#93c5fd');
+      regionCentral.setAttribute('fill', '#93c5fd');
+      regionEast.setAttribute('fill', '#93c5fd');
+    } else if (currentTab === 'regional') {
+      const selectedVal = document.getElementById('column-a-select').value;
+      if (selectedVal.includes('west') || selectedVal.includes('pnw')) {
+        regionWest.setAttribute('fill', '#2563eb');
+      } else if (selectedVal.includes('midwest') || selectedVal.includes('south-central')) {
+        regionCentral.setAttribute('fill', '#2563eb');
+      } else {
+        regionEast.setAttribute('fill', '#2563eb');
+      }
+    } else if (currentTab === 'metro') {
+      metroOverlay.style.display = 'block';
+    }
+  }
+
+  // Run on load
+  window.onload = init;
+</script>
 
 </body>
 </html>
